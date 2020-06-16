@@ -1,0 +1,23 @@
+{
+    "name": "iw3-firechat",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "serve": "npx es-dev-server --app-index index.html --node-resolve --watch -p 8081",
+      "css": "npx tailwindcss build ./assets/styles/tailwind-import.css -o ./assets/styles/tailwind.css",
+      "css:prod": "NODE_ENV=production npm run css"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "tailwindcss": "^1.4.6"
+    },
+    "dependencies": {
+      "firebase": "^7.14.5",
+      "lit-element": "^2.3.1",
+      "lit-html": "^1.2.1",
+      "page": "^1.11.6"
+    }
+  }
+  
